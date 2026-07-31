@@ -52,22 +52,7 @@ This command resolves `example.com`, establishes a TCP connection to port 80, se
 ## Example Output
 
 ```text
-connection successfully established
-HTTP/1.1 200 OK
-Date: Fri, 31 Jul 2026 10:25:12 GMT
-Content-Type: text/html
-Transfer-Encoding: chunked
-Connection: keep-alive
-Server: cloudflare
-Last-Modified: Mon, 20 Jul 2026 07:16:20 GMT
-Allow: GET, HEAD
-Accept-Ranges: bytes
-Age: 10794
-cf-cache-status: HIT
-CF-RAY: a23be5d80e3b3c01-BLR
-
-22f
-<!doctype html><html lang="en"><head><title>Example Domain</title>...
+>>> python client.py example.com connection successfully established HTTP/1.1 200 OK Date: Fri, 31 Jul 2026 10:25:12 GMT Content-Type: text/html Transfer-Encoding: chunked Connection: keep-alive Server: cloudflare Last-Modified: Mon, 20 Jul 2026 07:16:20 GMT Allow: GET, HEAD Accept-Ranges: bytes Age: 10794 cf-cache-status: HIT CF-RAY: a23be5d80e3b3c01-BLR 22f <!doctype html><html lang="en"><head><title>Example Domain</title><link rel="icon" href="data:,"><meta name="viewport" content="width=device-width, initial-scale=1"><style>body{background:#eee;width:60vw;margin:15vh auto;font-family:system-ui,sans-serif}h1{font-size:1.5em}div{opacity:0.8}a:link,a:visited{color:#348}</style></head><body><div><h1>Example Domain</h1><p>This domain is for use in documentation examples without needing permission. Avoid use in operations.</p><p><a href="https://iana.org/domains/example">Learn more</a></p></div></body></html> 0
 ```
 
 ## Project Structure
